@@ -73,10 +73,9 @@ def test_ten(driver):
         tag_campaign_price = i.find_element_by_css_selector(".campaign-price").get_attribute("tagName")
         color_campaign_price = i.find_element_by_css_selector(".campaign-price").value_of_css_property("color").split()
         assert color_campaign_price[1] == color_campaign_price[2]
-        size_regular_price = i.find_element_by_css_selector(".regular-price").size
-        size_campaign_price = i.find_element_by_css_selector(".campaign-price").size
-        assert size_regular_price['height'] < size_campaign_price['height']
-        assert size_regular_price['width'] < size_campaign_price['width']
+        size_regular_price = i.find_element_by_css_selector(".regular-price").value_of_css_property('font-size')
+        size_campaign_price = i.find_element_by_css_selector(".campaign-price").value_of_css_property('font-size')
+        assert size_regular_price < size_campaign_price
         driver.get(i.find_element_by_css_selector(".link").get_attribute("href"))
         time.sleep(1)
         # image2 = driver.find_element_by_css_selector(".image").get_attribute('src')
@@ -94,10 +93,10 @@ def test_ten(driver):
         assert tag_campaign_price == tag_campaign_price_2
         color_campaign_price_2 = driver.find_element_by_css_selector(".campaign-price").value_of_css_property("color").split()
         assert color_campaign_price_2[1] == color_campaign_price_2[2]
-        size_regular_price_2 = driver.find_element_by_css_selector(".regular-price").size
-        size_campaign_price_2 = driver.find_element_by_css_selector(".campaign-price").size
-        assert size_regular_price_2['height'] < size_campaign_price_2['height']
-        assert size_regular_price_2['width'] < size_campaign_price_2['width']
+        size_regular_price_2 = driver.find_element_by_css_selector(".regular-price").value_of_css_property('font-size')
+        size_campaign_price_2 = driver.find_element_by_css_selector(".campaign-price").value_of_css_property('font-size')
+        assert size_regular_price_2 < size_campaign_price_2
+
 
 
 
