@@ -31,7 +31,7 @@ import time
 #         i.find_element_by_xpath(".//div[contains(@class,'sticker')]")
 
 
-# def test_nine(driver):
+# def test_nine_one(driver):
 #     driver.get("http://localhost/litecart/admin/?app=countries&doc=countries")
 #     driver.find_element_by_name("username").send_keys("admin")
 #     driver.find_element_by_name("password").send_keys("admin")
@@ -58,12 +58,25 @@ import time
 #         driver.find_element_by_css_selector("[name=cancel]").click()
 #         assert strana == sorted(strana)
 
+# def test_nine_two(driver):
+#     driver.get("http://localhost/litecart/admin/?app=geo_zones&doc=geo_zones")
+#     driver.find_element_by_name("username").send_keys("admin")
+#     driver.find_element_by_name("password").send_keys("admin")
+#     driver.find_element_by_name("login").click()
+#     time.sleep(1)
+#     stran = driver.find_elements_by_css_selector("tr")
+#
+#     # contry = []
+#     for i in stran:
+#         s = i.find_elements_by_tag_name("tr")
+#         print(s.find_element_by_xpath("./td[3]").get_attribute("href"))
+
+
 def test_ten(driver):
     driver.get("http://localhost/litecart")
     time.sleep(1)
     products = driver.find_elements_by_css_selector(".product")
     for i in products[5: 6]:
-        # imeges = i.find_element_by_css_selector(".image").get_attribute('src')
         names = i.find_element_by_css_selector(".name").get_attribute("textContent")
         regular_price = i.find_element_by_css_selector(".regular-price").get_attribute("textContent")
         campaign_price = i.find_element_by_css_selector(".campaign-price").get_attribute("textContent")
@@ -74,11 +87,12 @@ def test_ten(driver):
         color_campaign_price = i.find_element_by_css_selector(".campaign-price").value_of_css_property("color").split()
         assert color_campaign_price[1] == color_campaign_price[2]
         size_regular_price = i.find_element_by_css_selector(".regular-price").value_of_css_property('font-size')
+        size_regular_price = float(size_regular_price[0:-2])
         size_campaign_price = i.find_element_by_css_selector(".campaign-price").value_of_css_property('font-size')
+        size_campaign_price = float(size_campaign_price[0:-2])
         assert size_regular_price < size_campaign_price
         driver.get(i.find_element_by_css_selector(".link").get_attribute("href"))
         time.sleep(1)
-        # image2 = driver.find_element_by_css_selector(".image").get_attribute('src')
         names2 = driver.find_element_by_tag_name("h1").get_attribute("textContent")
         assert names == names2
         regular_price_2 = driver.find_element_by_tag_name(".regular-price").get_attribute("textContent")
@@ -94,11 +108,7 @@ def test_ten(driver):
         color_campaign_price_2 = driver.find_element_by_css_selector(".campaign-price").value_of_css_property("color").split()
         assert color_campaign_price_2[1] == color_campaign_price_2[2]
         size_regular_price_2 = driver.find_element_by_css_selector(".regular-price").value_of_css_property('font-size')
+        size_regular_price_2 = float(size_regular_price_2[0:-2])
         size_campaign_price_2 = driver.find_element_by_css_selector(".campaign-price").value_of_css_property('font-size')
+        size_campaign_price_2 = float(size_campaign_price_2[0:-2])
         assert size_regular_price_2 < size_campaign_price_2
-
-
-
-
-
-
