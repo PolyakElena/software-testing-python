@@ -24,8 +24,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
   </component>
-  <component name="RunManager" selected="Python tests.pytest for tests.test_nine_two">
-    <configuration name="pytest for tests.test_example" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.pytest for tests.test_eleven_reg">
+    <configuration name="pytest for tests.test_eleven" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="python-exemple" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -36,11 +36,11 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.test_example&quot;" />
+      <option name="_new_target" value="&quot;tests.test_eleven&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for tests.test_nine" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for tests.test_eleven_reg" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="python-exemple" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -51,7 +51,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.test_nine&quot;" />
+      <option name="_new_target" value="&quot;tests.test_eleven_reg&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -102,11 +102,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest for tests.test_eleven_reg" />
+        <item itemvalue="Python tests.pytest for tests.test_eleven" />
         <item itemvalue="Python tests.pytest for tests.test_nine_two" />
         <item itemvalue="Python tests.pytest for tests.test_nine_one" />
         <item itemvalue="Python tests.pytest for tests.test_ten" />
-        <item itemvalue="Python tests.pytest for tests.test_nine" />
-        <item itemvalue="Python tests.pytest for tests.test_example" />
       </list>
     </recent_temporary>
   </component>
@@ -128,38 +128,38 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1185" y="431" key="#xdebugger.evaluate/0.0.1920.1040@0.0.1920.1040" timestamp="1605710761289" />
-    <state width="1899" height="269" key="GridCell.Tab.0.bottom" timestamp="1605872310664">
+    <state width="1899" height="379" key="GridCell.Tab.0.bottom" timestamp="1605886696577">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="269" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605872310664" />
-    <state width="1899" height="269" key="GridCell.Tab.0.center" timestamp="1605872310664">
+    <state width="1899" height="379" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605886696577" />
+    <state width="1899" height="379" key="GridCell.Tab.0.center" timestamp="1605886696577">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="269" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605872310664" />
-    <state width="1899" height="269" key="GridCell.Tab.0.left" timestamp="1605872310664">
+    <state width="1899" height="379" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605886696577" />
+    <state width="1899" height="379" key="GridCell.Tab.0.left" timestamp="1605886696577">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="269" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605872310664" />
-    <state width="1899" height="269" key="GridCell.Tab.0.right" timestamp="1605872310664">
+    <state width="1899" height="379" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605886696577" />
+    <state width="1899" height="379" key="GridCell.Tab.0.right" timestamp="1605886696577">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="269" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605872310664" />
-    <state width="932" height="339" key="GridCell.Tab.1.bottom" timestamp="1605868782018">
+    <state width="1899" height="379" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605886696577" />
+    <state width="1899" height="342" key="GridCell.Tab.1.bottom" timestamp="1605883159197">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="932" height="339" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605868782018" />
-    <state width="932" height="339" key="GridCell.Tab.1.center" timestamp="1605868782018">
+    <state width="1899" height="342" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1605883159197" />
+    <state width="1899" height="342" key="GridCell.Tab.1.center" timestamp="1605883159197">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="932" height="339" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605868782018" />
-    <state width="932" height="339" key="GridCell.Tab.1.left" timestamp="1605868782018">
+    <state width="1899" height="342" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1605883159197" />
+    <state width="1899" height="342" key="GridCell.Tab.1.left" timestamp="1605883159197">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="932" height="339" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605868782018" />
-    <state width="932" height="339" key="GridCell.Tab.1.right" timestamp="1605868782018">
+    <state width="1899" height="342" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1605883159197" />
+    <state width="1899" height="342" key="GridCell.Tab.1.right" timestamp="1605883159197">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="932" height="339" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605868782018" />
+    <state width="1899" height="342" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1605883159197" />
     <state x="890" y="109" key="SettingsEditor" timestamp="1605251252464">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
