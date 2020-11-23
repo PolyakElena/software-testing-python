@@ -8,6 +8,8 @@ import time
 import random
 from selenium import webdriver
 from selenium.webdriver.support.ui import Select
+from selenium.webdriver.common.by import By
+
 
 # def test_sevrn(driver):
 #     driver.get("http://localhost/litecart/admin/")
@@ -63,27 +65,27 @@ from selenium.webdriver.support.ui import Select
 #         assert strana == sorted(strana)
 #
 #
-def test_nine_two(driver):
-    driver.get("http://localhost/litecart/admin/?app=geo_zones&doc=geo_zones")
-    driver.find_element_by_name("username").send_keys("admin")
-    driver.find_element_by_name("password").send_keys("admin")
-    driver.find_element_by_name("login").click()
-    time.sleep(1)
-    url = []
-    st = driver.find_element_by_css_selector(".dataTable")
-    row = st.find_elements_by_css_selector(".row")
-    for i in row:
-        url.append(i.find_element_by_tag_name("a").get_attribute("href"))
-    for u in url:
-        driver.get(u)
-        s = driver.find_element_by_css_selector("#table-zones")
-        row_zone = s.find_elements_by_tag_name("tr")
-        contry = []
-        for j in row_zone[1:len(row_zone)-1]:
-            f = j.find_element_by_css_selector('td:nth-of-type(3)> select option[selected]').text
-            contry.append(f)
-            assert contry == sorted(contry)
-        time.sleep(1)
+# def test_nine_two(driver):
+#     driver.get("http://localhost/litecart/admin/?app=geo_zones&doc=geo_zones")
+#     driver.find_element_by_name("username").send_keys("admin")
+#     driver.find_element_by_name("password").send_keys("admin")
+#     driver.find_element_by_name("login").click()
+#     time.sleep(1)
+#     url = []
+#     st = driver.find_element_by_css_selector(".dataTable")
+#     row = st.find_elements_by_css_selector(".row")
+#     for i in row:
+#         url.append(i.find_element_by_tag_name("a").get_attribute("href"))
+#     for u in url:
+#         driver.get(u)
+#         s = driver.find_element_by_css_selector("#table-zones")
+#         row_zone = s.find_elements_by_tag_name("tr")
+#         contry = []
+#         for j in row_zone[1:len(row_zone)-1]:
+#             f = j.find_element_by_css_selector('td:nth-of-type(3)> select option[selected]').text
+#             contry.append(f)
+#             assert contry == sorted(contry)
+#         time.sleep(1)
 
 
 # def test_ten(driver):
@@ -225,3 +227,85 @@ def test_nine_two(driver):
 #     kol_2 = len(driver.find_elements_by_css_selector(".dataTable .row"))
 #     assert kol + 1 == kol_2
 #     time.sleep(2)
+
+# def test_thirteen(driver):
+#     wait = WebDriverWait(driver, 10)
+#     driver.get("http://localhost/litecart/")
+#     time.sleep(1)
+#     # for i in range(1, 4):
+#     for i in range(1, 3):
+#         prod = driver.find_elements_by_css_selector(".image-wrapper")
+#         prod[0].click()
+#         element = driver.find_element_by_css_selector("#cart span.quantity")
+#         if driver.find_element_by_tag_name("h1").text == "Yellow Duck":
+#             select = driver.find_element_by_tag_name("select")
+#             driver.execute_script("arguments[0].selectedIndex=2; arguments[0].dispatchEvent(new Event('change'))",
+#                                   select)
+#             driver.find_element_by_name("add_cart_product").click()
+#         else:
+#             driver.find_element_by_name("add_cart_product").click()
+#         wait.until(EC.text_to_be_present_in_element((By.CSS_SELECTOR, "#cart span.quantity"), f'{i}'))
+#         element = driver.find_element_by_css_selector("#cart span.quantity")
+#         assert element.text == f'{i}'
+#         driver.find_element_by_id("logotype-wrapper").click()
+#     driver.find_element_by_css_selector("#cart .link").click()
+#     l = driver.find_element_by_css_selector("table.dataTable.rounded-corners")
+#     lst = l.find_elements_by_tag_name("tr")
+#     s = driver.find_elements_by_name("remove_cart_item")
+#
+#     # while len(lst) > 6:
+#     # a = 2
+#     # while a > 0:
+#     #     wait.until(EC.element_to_be_clickable((By.NAME, "remove_cart_item")))
+#     #     driver.find_element_by_name("remove_cart_item li").click()
+#     #     time.sleep(3)
+#     #     wait.until_not(EC.staleness_of(lst[len(lst) - 4]))
+#     #     # lst = l.find_elements_by_tag_name("tr")
+#     #     a =-1
+
+
+# contryCSS = driver.find_elements_by_css_selector(".row")
+#     contry = []
+#     nomber = []
+#     for i in contryCSS:
+#         contry.append(i.find_element_by_xpath("./td[5]").text)
+#         zones = int(i.find_element_by_xpath("./td[6]").text)
+#         ids = int(i.find_element_by_xpath("./td[3]").text)
+#         if zones > 0:
+#             nomber.append(ids)
+#     assert contry == sorted(contry)
+#     for j in nomber:
+#         driver.find_element_by_css_selector(f".row:nth-child({j + 1}) a").click()
+#         table = driver.find_element_by_css_selector("#table-zones")
+#         rows = table.find_elements_by_tag_name("tr")
+#         strana = []
+#         for row in rows[1:len(rows) - 1]:
+#             a = row.find_element_by_xpath("./td[3]").text
+#             strana.append(a)
+#         driver.find_element_by_css_selector("[name=cancel]").click()
+#         assert strana == sorted(strana)
+
+
+def test_fourteen(driver):
+    driver.get("http://localhost/litecart/admin")
+    driver.find_element_by_name("username").send_keys("admin")
+    driver.find_element_by_name("password").send_keys("admin")
+    driver.find_element_by_name("login").click()
+    time.sleep(1)
+    driver.get("http://localhost/litecart/admin/?app=countries&doc=countries")
+    time.sleep(1)
+    countries = driver.find_elements_by_css_selector(".row")
+    for i in countries[0: 1]:
+        i.find_element_by_xpath("./td[7]").click()
+        time.sleep(3)
+        lst = driver.find_elements_by_css_selector("#content table [target='_blank']")
+        for j in lst:
+            main_window = [driver.current_window_handle]  # текущее окон
+            j.click()
+            WebDriverWait(driver, 10).until(EC.number_of_windows_to_be(2))
+            old_windows = driver.window_handles  # список открытых окон
+            new_windows = list(set(old_windows) - set(main_window))
+            driver.switch_to_window(new_windows[0])
+            driver.close()
+            driver.switch_to_window(main_window[0])
+        driver.find_element_by_name("cancel").click()
