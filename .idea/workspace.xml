@@ -28,22 +28,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
   </component>
-  <component name="RunManager" selected="Python tests.pytest for tests.test_fourteen">
-    <configuration name="pytest for tests.test_eleven_reg" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="python-exemple" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.test_eleven_reg&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python tests.pytest for tests.test_seventeen">
     <configuration name="pytest for tests.test_fourteen" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="python-exemple" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -74,6 +59,36 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest for tests.test_seventeen" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="python-exemple" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.test_seventeen&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for tests.test_sevrn" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="python-exemple" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.test_sevrn&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="pytest for tests.test_thirteen" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="python-exemple" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -89,28 +104,13 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for tests.test_twelve" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
-      <module name="python-exemple" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.test_twelve&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest for tests.test_fourteen" />
+        <item itemvalue="Python tests.pytest for tests.test_seventeen" />
+        <item itemvalue="Python tests.pytest for tests.test_sevrn" />
         <item itemvalue="Python tests.pytest for tests.test_thirteen" />
+        <item itemvalue="Python tests.pytest for tests.test_fourteen" />
         <item itemvalue="Python tests.pytest for tests.test_nine_two" />
-        <item itemvalue="Python tests.pytest for tests.test_twelve" />
-        <item itemvalue="Python tests.pytest for tests.test_eleven_reg" />
       </list>
     </recent_temporary>
   </component>
@@ -132,45 +132,61 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1185" y="431" key="#xdebugger.evaluate/0.0.1920.1040@0.0.1920.1040" timestamp="1605710761289" />
-    <state width="1899" height="211" key="GridCell.Tab.0.bottom" timestamp="1606147290698">
+    <state width="919" height="262" key="GridCell.Tab.0.bottom" timestamp="1606309957040">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="211" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606147290698" />
-    <state width="1899" height="211" key="GridCell.Tab.0.center" timestamp="1606147290698">
+    <state width="919" height="262" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606309957040" />
+    <state width="919" height="262" key="GridCell.Tab.0.center" timestamp="1606309957040">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="211" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606147290698" />
-    <state width="1899" height="211" key="GridCell.Tab.0.left" timestamp="1606147290698">
+    <state width="919" height="262" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606309957040" />
+    <state width="919" height="262" key="GridCell.Tab.0.left" timestamp="1606309957040">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="211" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606147290698" />
-    <state width="1899" height="211" key="GridCell.Tab.0.right" timestamp="1606147290698">
+    <state width="919" height="262" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606309957040" />
+    <state width="919" height="262" key="GridCell.Tab.0.right" timestamp="1606309957040">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="211" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606147290698" />
-    <state width="1899" height="211" key="GridCell.Tab.1.bottom" timestamp="1606147290698">
+    <state width="919" height="262" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606309957040" />
+    <state width="919" height="262" key="GridCell.Tab.1.bottom" timestamp="1606309957040">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="211" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606147290698" />
-    <state width="1899" height="211" key="GridCell.Tab.1.center" timestamp="1606147290698">
+    <state width="919" height="262" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1606309957040" />
+    <state width="919" height="262" key="GridCell.Tab.1.center" timestamp="1606309957040">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="211" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606147290698" />
-    <state width="1899" height="211" key="GridCell.Tab.1.left" timestamp="1606147290698">
+    <state width="919" height="262" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1606309957040" />
+    <state width="919" height="262" key="GridCell.Tab.1.left" timestamp="1606309957040">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="211" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606147290698" />
-    <state width="1899" height="211" key="GridCell.Tab.1.right" timestamp="1606147290698">
+    <state width="919" height="262" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1606309957040" />
+    <state width="919" height="262" key="GridCell.Tab.1.right" timestamp="1606309957040">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1899" height="211" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606147290698" />
+    <state width="919" height="262" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1606309957040" />
     <state x="890" y="109" key="SettingsEditor" timestamp="1605251252464">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="890" y="109" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1605251252464" />
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1606117683462">
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1606301517325">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606117683462" />
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606301517325" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests.py</url>
+          <line>250</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests.py</url>
+          <line>257</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
