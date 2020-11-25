@@ -9,6 +9,8 @@ import random
 from selenium import webdriver
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.common.by import By
+import datetime
+from selenium.common.exceptions import NoSuchElementException
 
 
 # def test_sevrn(driver):
@@ -229,10 +231,10 @@ from selenium.webdriver.common.by import By
 #     time.sleep(2)
 
 def test_thirteen(driver):
-    wait = WebDriverWait(driver, 10)
+    wait = WebDriverWait(driver, 7)
     driver.get("http://localhost/litecart/")
     time.sleep(1)
-    for i in range(1, 2):
+    for i in range(1, 4):
         prod = driver.find_elements_by_css_selector(".image-wrapper")
         prod[0].click()
         element = driver.find_element_by_css_selector("#cart span.quantity")
@@ -249,16 +251,13 @@ def test_thirteen(driver):
         driver.find_element_by_id("logotype-wrapper").click()
 
     driver.find_element_by_css_selector("#cart .link").click()
-    # wait.until(EC.presence_of_element_located(By.CSS_SELECTOR(".dataTable tr")))
-    l = driver.find_element_by_css_selector(".dataTable")
-    r = len(l.find_elements_by_tag_name("tr")) - 5
-    for j in range(r):
-        table = driver.find_element_by_css_selector(".dataTable")
-        but = driver.find_element_by_css_selector("li:first-child [name=remove_cart_item]")
-        wait.until(EC.visibility_of_element_located(By.CSS_SELECTOR("li:first-child [name=remove_cart_item]")))
-        but.click()
+    r = driver.find_elements_by_css_selector("[name='remove_cart_item']")
+    ra = len(r)
+    for j in range(ra):
+        table = driver.find_elements_by_css_selector('#checkout-summary-wrapper tr')[-1]
+        wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, "li:first-child [name='remove_cart_item']")))
+        driver.find_element_by_css_selector("li:first-child [name='remove_cart_item']").click()
         wait.until(EC.staleness_of(table))
-        time.sleep(2)
 
 
 # def test_fourteen(driver):
@@ -286,18 +285,18 @@ def test_thirteen(driver):
 #         driver.find_element_by_name("cancel").click()
 
 
-def test_seventeen(driver):
-    driver.implicitly_wait(10)
-    driver.get("http://localhost/litecart/admin")
-    driver.find_element_by_name("username").send_keys("admin")
-    driver.find_element_by_name("password").send_keys("admin")
-    driver.find_element_by_name("login").click()
-    driver.get("http://localhost/litecart/admin/?app=catalog&doc=catalog&category_id=1")
-    lst = driver.find_elements_by_css_selector(".dataTable .row")
-    for i in range(3, len(lst)):
-        a = driver.find_elements_by_css_selector(".dataTable .row")
-        a[i].find_element_by_tag_name("a").click()
-        time.sleep(2)
-        for l in driver.get_log("browser"):
-            print(l)
-        driver.find_element_by_name("cancel").click()
+# def test_seventeen(driver):
+#     driver.implicitly_wait(10)
+#     driver.get("http://localhost/litecart/admin")
+#     driver.find_element_by_name("username").send_keys("admin")
+#     driver.find_element_by_name("password").send_keys("admin")
+#     driver.find_element_by_name("login").click()
+#     driver.get("http://localhost/litecart/admin/?app=catalog&doc=catalog&category_id=1")
+#     lst = driver.find_elements_by_css_selector(".dataTable .row")
+#     for i in range(3, len(lst)):
+#         a = driver.find_elements_by_css_selector(".dataTable .row")
+#         a[i].find_element_by_tag_name("a").click()
+#         time.sleep(2)
+#         for l in driver.get_log("browser"):
+#             print(l)
+#         driver.find_element_by_name("cancel").click()
